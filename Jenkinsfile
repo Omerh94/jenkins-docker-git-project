@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  triggers { pollSCM('H/1 * * * *') }
+  
   environment {
     IMAGE_NAME     = "sleep-test-image"
     CONTAINER_NAME = "sleep-test-${BUILD_NUMBER}"   // custom name via env
